@@ -1,4 +1,4 @@
-# [AI Translator]
+# AI Translator
 
 This project translates any text and audio for you using AI.
 
