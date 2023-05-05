@@ -44,7 +44,7 @@ const AudioTranslate = () => {
     setLoading(true);
 
     const transcribed = await transcribe();
-
+    console.log(transcribed);
     console.log(transcribed.text);
     setGeneratedTranslation(transcribed.text);
     setLoading(false);
@@ -168,7 +168,9 @@ const AudioTranslate = () => {
                 });
               }}
             >
-              <p> {generatedTranslation}</p>
+              <pre className="whitespace-pre-wrap break-words text-justify">
+                {generatedTranslation}
+              </pre>
             </div>
             <p className="my-1 text-sm text-gray-500 dark:text-gray-300">
               Click on translation to copy on clipboard
